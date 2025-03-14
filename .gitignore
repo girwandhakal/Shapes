@@ -13,3 +13,6 @@ Thumbs.db
 
 # Ignore temporary files
 *.tmp
+
+#Ignore .out files
+*.out
