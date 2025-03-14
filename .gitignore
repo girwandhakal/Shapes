@@ -16,3 +16,6 @@ Thumbs.db
 
 #Ignore .out files
 *.out
+
+#Ignore .vscode
+*.vscode
