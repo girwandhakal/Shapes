@@ -21,4 +21,4 @@ Shape.o: Shape.cpp Shape.h
 	g++ -c Shape.cpp
 
 clean:
-	rm *.o a.out
+	rm *.o a.out *.exe
