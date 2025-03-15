@@ -8,7 +8,8 @@
 #include <iomanip>
 #include <iostream>
 
-Torus::Torus(std::string name, double smallRadius, double bigRadius):Shape(name) { // Shape does not have a default constructor, so need to call the parameterized constructor here
+Torus::Torus(std::string name, double smallRadius, double bigRadius):Shape(name) // Shape does not have a default constructor, so need to call the parameterized constructor here
+{ 
     this->small_radius = smallRadius;
     this->big_radius = bigRadius;
 }
