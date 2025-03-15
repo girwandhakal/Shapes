@@ -81,7 +81,7 @@ bool Cylinder::test(const std::vector<std::string> &cond) const{
         {
             return false;
         }
-        if(!flag)
+        if(!flag) //if any test condition returns false, function returns false
         {
             return false;
         }

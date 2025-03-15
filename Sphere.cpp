@@ -23,6 +23,8 @@ std::string Sphere::getInfo() const{
     ss << "Sphere: " << this->getName()<< std::fixed << std::setprecision(2) << ", Radius=" << this->radius <<"\n\tSurface Area: "
     << this->getArea() << ", Volume: " << this->getVolume() << "\n";
     std::string output = ss.str();
+    ss.str("");
+    ss.clear();
     return output;
 }
 
@@ -78,7 +80,7 @@ bool Sphere::test(const std::vector<std::string> &cond) const{
         {
             return false;
         }
-        if(!flag)
+        if(!flag) //if any test condition returns false, function returns false
         {
             return false;
         }

@@ -25,6 +25,8 @@ std::string Torus::getInfo() const{
     ss << "Torus: " << this->getName()<< std::fixed << std::setprecision(2) << ", Small Radius=" << this->small_radius << ", Big Radius=" << this->big_radius <<"\n\tSurface Area: "
     << this->getArea() << ", Volume: " << this->getVolume() << "\n";
     std::string output = ss.str();
+    ss.str("");
+    ss.clear();
     return output;
 }
 
@@ -78,7 +80,7 @@ bool Torus::test(const std::vector<std::string> &cond) const{
         {
             return false;
         }
-        if(!flag)
+        if(!flag) //if any test condition returns false, function returns false
         {
             return false;
         }
